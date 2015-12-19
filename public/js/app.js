@@ -5,4 +5,8 @@ angular.module('myApp', [])
                 $('#name').focus();
             });
         }
+
+        $scope.send = function() {
+            
+        }
     })

@@ -82,15 +82,15 @@
                     <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_area"</label>&gt;</span>
                         <span class="three indent">&lt;<label class="tag">span</label>&gt;你是誰&lt;/<label class="tag">span</label>&gt;</span>
                         <span class="three indent"><label class="comment">// 訪客的名字</label></span>
-                        <span class="three indent"><input type="text" id="name"></span>
+                        <span class="three indent"><input type="text" id="name" ng-model="name"></span>
                         <br />
                         <span class="three indent">&lt;<label class="tag">span</label>&gt;想說什麼&lt;/<label class="tag">span</label>&gt;</span>
                         <span class="three indent"><label class="comment">// 訪客的留言</label></span>
-                        <span class="three indent"><textarea row="2"></textarea></span>
+                        <span class="three indent"><textarea row="2" ng-model="content"></textarea></span>
                         <br />
                         <span class="three indent">&lt;<label class="tag">span</label>&gt;送出&lt;/<label class="tag">span</label>&gt;</span>
                         <span class="three indent"><label class="comment">// server收到留言，存入database</label></span>
-                        <span class="three indent"><button>送出</button></span>
+                        <span class="three indent"><button ng-click="send()">送出</button></span>
                     <span class="two indent">&lt;/<label class="tag">div</label>&gt;</span>
                 <span class="one indent">&lt;/<label class="tag">div</label>&gt;</span>
                 <span class="one indent">&lt;<label class="tag">script</label> <label class="attr">type</label>=<label class="str">"text/javascript"</label> <label class="attr">src</label>=<label class="str">"lib/angular.min.js"</label>&gt;&lt;/<label class="tag">script</label>&gt;</span>
