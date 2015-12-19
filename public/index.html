@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.5.0/css/font-awesome.min.css"/>
 </head>
-<body ng-app="myApp" ng-controller="mainCtrl">
+<body ng-app="myApp" ng-controller="mainCtrl" ng-init="init()">
     <div id="side_bar">
         <span class="header">FOLDERS</span>
         <span>
@@ -62,6 +62,7 @@
             <span>30</span>
             <span>31</span>
             <span>32</span>
+            <span>33</span>
         </div>
         <div id="edit_area">
             <span>&lt;!DOCTYPE html&gt;</span>
@@ -72,7 +73,7 @@
                 <span class="one indent">&lt;<label class="tag">link</label> <label class="attr">rel</label>=<label class="str">"stylesheet"</label> <label class="attr">type</label>=<label class="str">"text/css"</label> <label class="attr">href</label>=<label class="str">"css/style.css"</label> /&gt;</span>
                 <span class="one indent">&lt;<label class="tag">link</label> <label class="attr">rel</label>=<label class="str">"stylesheet"</label> <label class="attr">type</label>=<label class="str">"text/css"</label> <label class="attr">href</label>=<label class="str">"lib/font-awesome.min.css"</label> /&gt;</span>
             <span>&lt;/<label class="tag">head</label>&gt;</span>
-            <span>&lt;<label class="tag">body</label> <label class="attr">ng-app</label>=<label class="str">"myApp"</label> <label class="attr">ng-controller</label>=<label class="str">"mainCtrl"</label>&gt;</span>
+            <span>&lt;<label class="tag">body</label> <label class="attr">ng-app</label>=<label class="str">"myApp"</label> <label class="attr">ng-controller</label>=<label class="str">"mainCtrl"</label> <label class="attr">ng-init</label>=<label class="str">"init()"</label>&gt;</span>
                 <span class="one indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"side_bar"</label>&gt;</span>
                 <span class="one indent">&lt;/<label class="tag">div</label>&gt;</span>
                 <span class="one indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_container"</label>&gt;</span>
@@ -81,7 +82,7 @@
                     <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_area"</label>&gt;</span>
                         <span class="three indent">&lt;<label class="tag">span</label>&gt;你是誰&lt;/<label class="tag">span</label>&gt;</span>
                         <span class="three indent"><label class="comment">// 訪客的名字</label></span>
-                        <span class="three indent"><input type="text"></span>
+                        <span class="three indent"><input type="text" id="name"></span>
                         <br />
                         <span class="three indent">&lt;<label class="tag">span</label>&gt;想說什麼&lt;/<label class="tag">span</label>&gt;</span>
                         <span class="three indent"><label class="comment">// 訪客的留言</label></span>
@@ -94,10 +95,12 @@
                 <span class="one indent">&lt;/<label class="tag">div</label>&gt;</span>
                 <span class="one indent">&lt;<label class="tag">script</label> <label class="attr">type</label>=<label class="str">"text/javascript"</label> <label class="attr">src</label>=<label class="str">"lib/angular.min.js"</label>&gt;&lt;/<label class="tag">script</label>&gt;</span>
                 <span class="one indent">&lt;<label class="tag">script</label> <label class="attr">type</label>=<label class="str">"text/javascript"</label> <label class="attr">src</label>=<label class="str">"js/app.js"</label>&gt;&lt;/<label class="tag">script</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">script</label> <label class="attr">type</label>=<label class="str">"text/javascript"</label> <label class="attr">src</label>=<label class="str">"lib/jquery-2.1.3.min.js"</label>&gt;&lt;/<label class="tag">script</label>&gt;</span>
             <span>&lt;/<label class="tag">body</label>&gt;</span>
         </div>
     </div>
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="lib/jquery-2.1.3.min.js"></script>
 </body>
 </html>
