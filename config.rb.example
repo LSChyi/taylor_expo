@@ -1,0 +1,9 @@
+module Config
+    def self.account
+        "root"
+    end
+
+    def self.password
+        "password"
+    end
+end
