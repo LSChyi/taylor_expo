@@ -28,8 +28,8 @@ body {
     font-weight: 100;
 }
 
-#side_bar span {
-    display: block;  
+span {
+    display: block;
 }
 
 #side_bar .header {
@@ -42,11 +42,13 @@ body {
     flex-direction: row;
     background-color: rgb(29, 30, 26);
     height: 100vh;
+    overflow: scroll;
 }
 
 #edit_line_nubmer {
     padding: 8px 12px 8px 12px;
     color: rgb(124, 116, 119);
+    text-align: right;
 }
 
 #edit_area {
@@ -61,4 +63,20 @@ body {
 }
 .two.indent {
     text-indent: 2em;
+}
+.three.indent {
+    text-indent: 3em;
+}
+
+.tag {
+    color: rgb(247, 0, 94);
+}
+.attr {
+    color: rgb(150, 227, 11);
+}
+.str {
+    color: rgb(224, 215, 90);
+}
+.comment {
+    color: rgb(98, 95, 75);
 }

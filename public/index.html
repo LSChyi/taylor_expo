@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <title>工程師的留言本</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.5.0/css/font-awesome.min.css"/>
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="mainCtrl">
     <div id="side_bar">
         <span class="header">FOLDERS</span>
         <span>
@@ -30,14 +30,74 @@
     </div>
     <div id="edit_container">
         <div id="edit_line_nubmer">
-            1
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+            <span>20</span>
+            <span>21</span>
+            <span>22</span>
+            <span>23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span>30</span>
+            <span>31</span>
+            <span>32</span>
         </div>
         <div id="edit_area">
-            te
+            <span>&lt;!DOCTYPE html&gt;</span>
+                <span>&lt;<label class="tag">html</label> <label class="attr">lang</label>=<label class="str">"zh-tw"</label>&gt;</span>
+                <span>&lt;<label class="tag">head</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">meta</label><label class="attr">charset</label>=<label class="str">"UTF-8"</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">title</label>&gt;工程師的留言本&lt;/<label class="tag">title</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">link</label> <label class="attr">rel</label>=<label class="str">"stylesheet"</label> <label class="attr">type</label>=<label class="str">"text/css"</label> <label class="attr">href</label>=<label class="str">"css/style.css"</label> /&gt;</span>
+                <span class="one indent">&lt;<label class="tag">link</label> <label class="attr">rel</label>=<label class="str">"stylesheet"</label> <label class="attr">type</label>=<label class="str">"text/css"</label> <label class="attr">href</label>=<label class="str">"lib/font-awesome.min.css"</label> /&gt;</span>
+            <span>&lt;/<label class="tag">head</label>&gt;</span>
+            <span>&lt;<label class="tag">body</label> <label class="attr">ng-app</label>=<label class="str">"myApp"</label> <label class="attr">ng-controller</label>=<label class="str">"mainCtrl"</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"side_bar"</label>&gt;</span>
+                <span class="one indent">&lt;/<label class="tag">div</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_container"</label>&gt;</span>
+                    <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_line_nubmer"</label>&gt;</span>
+                    <span class="two indent">&lt;/<label class="tag">div</label>&gt;</span>
+                    <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_area"</label>&gt;</span>
+                        <span class="three indent">&lt;<label class="tag">span</label>&gt;你是誰&lt;/<label class="tag">span</label>&gt;</span>
+                        <span class="three indent"><label class="comment">// 訪客的名字</label></span>
+                        <span class="three indent"><input type="text"></span>
+                        <br />
+                        <span class="three indent">&lt;<label class="tag">span</label>&gt;想說什麼&lt;/<label class="tag">span</label>&gt;</span>
+                        <span class="three indent"><label class="comment">// 訪客的留言</label></span>
+                        <span class="three indent"><textarea row="2"></textarea></span>
+                        <br />
+                        <span class="three indent">&lt;<label class="tag">span</label>&gt;送出&lt;/<label class="tag">span</label>&gt;</span>
+                        <span class="three indent"><label class="comment">// server收到留言，存入database</label></span>
+                        <span class="three indent"><button>送出</button></span>
+                    <span class="two indent">&lt;/<label class="tag">div</label>&gt;</span>
+                <span class="one indent">&lt;/<label class="tag">div</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">script</label> <label class="attr">type</label>=<label class="str">"text/javascript"</label> <label class="attr">src</label>=<label class="str">"lib/angular.min.js"</label>&gt;&lt;/<label class="tag">script</label>&gt;</span>
+                <span class="one indent">&lt;<label class="tag">script</label> <label class="attr">type</label>=<label class="str">"text/javascript"</label> <label class="attr">src</label>=<label class="str">"js/app.js"</label>&gt;&lt;/<label class="tag">script</label>&gt;</span>
+            <span>&lt;/<label class="tag">body</label>&gt;</span>
         </div>
     </div>
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="lib/jquery-2.1.3.min.js"></script>
 </body>
 </html>
