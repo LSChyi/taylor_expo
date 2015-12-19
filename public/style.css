@@ -13,5 +13,40 @@
 }
 
 body {
-    font-family: 'Montserrat', 'cwTeXHei'
+    font-family: 'Montserrat', 'cwTeXHei';
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+    margin: 0px;
+}
+
+#side_bar {
+    background-color: rgb(224, 224, 224);
+    padding: 8px;
+    width: 250px;
+}
+
+#side_bar .header {
+    color: rgb(111, 110, 128);
+}
+
+#edit_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(29, 30, 26);
+    height: 100vh;
+}
+
+#edit_line_nubmer {
+    padding: 8px 12px 8px 12px;
+    color: rgb(124, 116, 119);
+}
+
+#edit_area {
+    background-color: rgb(29, 30, 26);
+    padding: 8px;
+    width: 100%;
+    color: rgb(246, 247, 238);
 }
