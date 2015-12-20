@@ -30,6 +30,16 @@ body {
 
 span {
     display: block;
+    height: 24px;
+}
+
+span.two_height {
+    height: 48px;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
 }
 
 #side_bar .header {

@@ -63,9 +63,6 @@
             <span>30</span>
             <span>31</span>
             <span>32</span>
-            <span>33</span>
-            <span>34</span>
-            <span>35</span>
         </div>
         <div id="edit_area">
             <span>&lt;!DOCTYPE html&gt;</span>
@@ -83,18 +80,14 @@
                 <span class="one indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_container"</label>&gt;</span>
                     <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_line_nubmer"</label>&gt;</span>
                     <span class="two indent">&lt;/<label class="tag">div</label>&gt;</span>
-                    <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_area"</label>&gt;</span>
-                        <span class="three indent"><label class="comment">// 按Ctrl+空白鍵可以換輸入法</label></span>
-                        <span class="three indent">&lt;<label class="tag">span</label>&gt;你是誰&lt;/<label class="tag">span</label>&gt;</span>
-                        <span class="three indent"><label class="comment">// 訪客的名字</label></span>
+                    <span class="two indent">&lt;<label class="tag">div</label> <label class="attr">id</label>=<label class="str">"edit_area"</label>&gt; <label class="comment">&lt;!-- 按Ctrl+空白鍵可以換輸入法 --&gt;</label></span>
+                        <span class="three indent">&lt;<label class="tag">span</label>&gt;你是誰&lt;/<label class="tag">span</label>&gt; <label class="comment">&lt;!-- 訪客的名字 --&gt;</label></span>
                         <span class="three indent"><input type="text" id="name" ng-model="name" placeholder="沒寫就是匿名喔"></span>
-                        <br />
-                        <span class="three indent">&lt;<label class="tag">span</label>&gt;想說什麼&lt;/<label class="tag">span</label>&gt;</span>
-                        <span class="three indent"><label class="comment">// 訪客的留言</label></span>
-                        <span class="three indent"><textarea row="2" ng-model="content"></textarea></span>
-                        <br />
-                        <span class="three indent">&lt;<label class="tag">span</label>&gt;送出&lt;/<label class="tag">span</label>&gt;</span>
-                        <span class="three indent"><label class="comment">// server收到留言，存入database</label></span>
+                        <span> </span>
+                        <span class="three indent">&lt;<label class="tag">span</label>&gt;想說什麼&lt;/<label class="tag">span</label>&gt; <label class="comment">&lt;!-- 訪客的留言 --&gt;</label></span>
+                        <span class="three indent two_height"><textarea row="2" ng-model="content"></textarea></span>
+                        <span> </span>
+                        <span class="three indent">&lt;<label class="tag">span</label>&gt;送出&lt;/<label class="tag">span</label>&gt; <label class="comment">&lt;!-- server收到留言，存入database --&gt;</label></span>
                         <span class="three indent"><button ng-click="send()">送出</button></span>
                     <span class="two indent">&lt;/<label class="tag">div</label>&gt;</span>
                 <span class="one indent">&lt;/<label class="tag">div</label>&gt;</span>
